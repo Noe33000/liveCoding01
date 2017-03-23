@@ -1,0 +1,123 @@
+
+/*
+
+    Tags HTML
+
+*/
+
+/* Initialisation de la racine du DOM */
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    /* declare entire website font */
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: #424242;
+}
+
+*, *:after, *:before {
+    box-sizing: border-border;
+}
+
+/*
+
+    Ids declaration
+
+*/
+
+#toDisappear {
+    border: 1px solid black;
+    opacity: 1;
+
+    transition: opacity 300ms;
+}
+
+#toDisappear:hover {
+    opacity: 0;
+}
+
+/*
+
+    Classes declaration
+
+*/
+
+/* main centered website wrapper */
+.container {
+
+    background-color: #fafafa;
+
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    margin: 0 25% 0 25%;
+}
+
+.wrapper {
+    padding: 15px 25px;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.wrapper div {
+    margin-bottom: 10px;
+}
+
+.wrapper div:last-child {
+    margin-bottom: 0;
+}
+
+.wrapper .title {
+    border: 1px solid black;
+    height: 50px;
+
+    text-align: center;
+    background: grey;
+
+    transition: all 200ms;
+
+    cursor: pointer;
+}
+
+.wrapper .title:hover {
+    background: yellow;
+    height: 100px;
+}
+
+.wrapper .title span {
+    color: blue;
+    font-size: 24px;
+
+    line-height: 50px;
+}
+
+.wrapper .content {
+    border: 1px solid black;
+
+    padding: 0 15px;
+
+    height: 30%;
+    overflow: hidden;
+
+    transition: height 200ms;
+}
+
+.wrapper .content:hover {
+    height: 70%;
+}
+
+.wrapper .footer {
+    border: 1px solid black;
+}
+
+.title span {
+
+}
