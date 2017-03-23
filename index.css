@@ -27,6 +27,23 @@ body {
 
 /*
 
+    Ids declaration
+
+*/
+
+#toDisappear {
+    border: 1px solid black;
+    opacity: 1;
+
+    transition: opacity 300ms;
+}
+
+#toDisappear:hover {
+    opacity: 0;
+}
+
+/*
+
     Classes declaration
 
 */
@@ -45,6 +62,9 @@ body {
 
 .wrapper {
     padding: 15px 25px;
+    position: relative;
+    height: 100%;
+    overflow: auto;
 }
 
 .wrapper div {
@@ -60,6 +80,16 @@ body {
     height: 50px;
 
     text-align: center;
+    background: grey;
+
+    transition: all 200ms;
+
+    cursor: pointer;
+}
+
+.wrapper .title:hover {
+    background: yellow;
+    height: 100px;
 }
 
 .wrapper .title span {
@@ -71,6 +101,17 @@ body {
 
 .wrapper .content {
     border: 1px solid black;
+
+    padding: 0 15px;
+
+    height: 30%;
+    overflow: hidden;
+
+    transition: height 200ms;
+}
+
+.wrapper .content:hover {
+    height: 70%;
 }
 
 .wrapper .footer {
