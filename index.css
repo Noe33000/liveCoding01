@@ -12,9 +12,6 @@ html, body {
 
     margin: 0;
     padding: 0;
-
-    /* declare entire website font */
-    font-family: Verdana, sans-serif;
 }
 
 body {
@@ -49,6 +46,15 @@ body {
 */
 
 /* main centered website wrapper */
+
+.btn-success {
+    background: cornflowerblue;
+}
+
+.btn-success:hover {
+    background: darkblue;
+}
+
 .container {
 
     background-color: #fafafa;
