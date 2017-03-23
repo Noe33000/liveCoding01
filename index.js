@@ -6,3 +6,5 @@ if (confirm("Voulez-vous rester sur le site ?")) {
     alert('allez-vous en !');
 }
 */
+
+console.log("toto");
